@@ -20,5 +20,6 @@ from undi import urls, views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('undi/', include('undi.urls')),
+    path('register/', include('register.urls')),
     #path('question/', views.question_view, name='question_view'),
 ]
