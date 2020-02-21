@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'register.apps.RegisterConfig',
     'undi.apps.UndiConfig',
     'django.contrib.admin',
     'django.contrib.auth',
