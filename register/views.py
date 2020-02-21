@@ -2,6 +2,8 @@ from django.shortcuts import render, redirect
 from .forms import RegisterForm
 from django.http import HttpResponse
 
+
+
 '''
 def get_register(request):
     # if this is a POST request we need to process the form data
@@ -27,10 +29,11 @@ def get_register(request):
 '''
 
 def get_register(request):
-    form= RegisterForm(request.POST or None)
-    if form.is_valid():
-        form.save()
-  
-    context= {'form': form }
-        
-    return render(request, 'undi/register.html', context)
+	form = RegisterForm(request.POST or None)
+
+	if form.is_valid():
+		form.save()
+		form = RegisterForm()
+	
+	context = {'form':form}
+	return render(request, 'undi/register.html', context)

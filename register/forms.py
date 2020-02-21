@@ -4,5 +4,5 @@ from django.forms import ModelForm
 
 class RegisterForm(forms.ModelForm):
     class Meta:
-        model= Register
-        fields= ["name_text", "ic_text", "sex", "monthly_salary_text"]
+        model = Register
+        fields = ["name_text", "ic_text", "sex", "monthly_salary_text"]
