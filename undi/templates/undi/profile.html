@@ -1,1 +1,9 @@
-{{ posts }}
+{% extends "undi/base.html" %}
+{% block content %}
+
+Nama: {{ posts.name_text }} <br>
+IC: {{ posts.ic_text }} <br>
+Lelaki: {{ posts.sex }} <br>
+Gaji sebulan: {{ posts.monthly_salary_text }}<br>
+
+{% endblock content %}
